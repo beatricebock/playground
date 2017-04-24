@@ -1,0 +1,51 @@
+%html{:lang=>"en"}
+  %head
+    %title Asterism
+    %meta{:charset=>'UTF-8'}
+    %meta{:name=>'viewport', :content=>'width=device-width, initial-scale=1.0'}
+    %link{:rel=>'stylesheet', :href='style.css'}
+  %body
+    %nav
+      %header
+        %h1 Asterism
+      %ul.nav
+        %li Home
+        %li About Asterism
+        %li FAQS
+        %li Purchase Now
+        %li Contact
+
+    .container
+      .divider
+      .posts
+        .featured-post
+          %img{:src=>''}
+          .featured-content
+            .featured-title
+            .featured-desc
+        .divider
+          .post
+            %img{:src=>''}
+            .post-content
+              .post-title
+              .divider
+              .post-date
+              .post-desc
+              %button.btn-post
+        .divider
+        .pagination
+
+      .sidebar
+        .welcome
+        .socials
+        .sub
+        .gallery
+        .categories
+        .search
+        .sidebar-featured
+        .archive
+
+    %footer
+      .footer-brand
+
+
