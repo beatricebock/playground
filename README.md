@@ -5,3 +5,4 @@ Frontend Playground for all things HTML/CSS
 - [ ] Codify [Asterism](https://www.pinterest.com/pin/820992207041593854/)  
 - [ ] Play with Bulma CSS  
 - [ ] Play with Materialize CSS  
+- [ ] Build experimental HUGO site

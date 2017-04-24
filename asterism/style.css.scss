@@ -1,0 +1,156 @@
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  @include uppercase;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  
+  header {
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+    li{
+      text-align: center;
+      list-style: none;
+      box-sizing: border-box;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+  }
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .featured-post {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin: auto;
+      padding: auto;
+      z-index: -2;
+    }
+    .featured-content {
+      
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+ 
+      width: 80%;
+      height: 80%;
+      
+      margin: auto;
+      padding: auto;
+
+      position: absolute;
+
+      z-index: 2;
+    }
+    .featured-bg {
+      position: absolute;
+      align-self: center;
+      width: 80%;
+      height: 80%;
+      background-color: white;
+      opacity: 0.5;
+
+      z-index: -1;
+    }
+
+    .featured-title {
+      @include uppercase;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .featured-desc {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .sidebar {
+    .widget {
+      border: 1px solid black;
+    }
+  }
+}
+
+
+
+.divider {
+  width: 100%;
+  border-bottom: 0.5px solid black;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  nav {
+    ul {
+      margin: auto;
+      padding: auto;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li {
+        padding-right: 2%;
+      }
+    }
+  }
+  
+  .container {
+    width: 65%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1001px) {
+  nav {
+    ul {
+      margin: auto;
+      padding: auto;
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li {
+        padding-right: 1%;
+      }
+    }
+  }
+  
+  .posts {
+    width: 65%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+}
