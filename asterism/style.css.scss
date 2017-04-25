@@ -39,6 +39,7 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   
   .featured-post {
     position: relative;
@@ -96,7 +97,24 @@ nav {
   .sidebar {
     .widget {
       border: 1px solid black;
+      padding: 5% 10% 5% 10%;
+      
+      .widget-title {
+        @include uppercase;
+        text-align: center;
+      }
+      
+
     }
+      .socials {
+        display: flex;
+        justify-content: space-around;
+        
+        a{
+          text-align: center;
+          color: black;
+        }
+      }
   }
 }
 
@@ -124,8 +142,12 @@ nav {
     }
   }
   
-  .container {
+  .posts {
     width: 65%;
+    
+    .featured-bg {
+      max-width: 400px;
+    }
   }
   .sidebar {
     width: 30%;
@@ -149,8 +171,12 @@ nav {
   
   .posts {
     width: 65%;
+    
+    .featured-bg {
+      max-width: 400px;
+    }
   }
   .sidebar {
     width: 30%;
   }
-}
+ }
