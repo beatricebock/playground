@@ -5,12 +5,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+//------- colors ------//
+$bg: #F6F6F6;
+
 * {
   font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+  background-color: $bg;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -138,13 +147,13 @@ nav {
   margin-bottom: 2%;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .posts {
     width: 100%;
   }
 }
 
-@media (min-width: 801px) and (max-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width: 1000px){
   
   .container {
     width: auto;
@@ -178,7 +187,7 @@ nav {
   }
 }
 
-@media (min-width: 1001px) {
+@media screen and (min-width: 1001px) {
   .container {
     width: auto;
     padding-left: 10%;
