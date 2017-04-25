@@ -30,10 +30,12 @@ nav {
   
   header {
     text-align: center;
+    letter-spacing: 10px;
   }
 
   ul {
     padding: 0;
+    font-size: 1em
     li{
       text-align: center;
       list-style: none;
@@ -143,8 +145,8 @@ nav {
 .divider {
   width: 100%;
   border-bottom: 0.5px solid black;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-bottom:5%;
 }
 
 @media screen and (max-width: 800px) {
@@ -157,8 +159,8 @@ nav {
   
   .container {
     width: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   nav {
     ul {
@@ -190,8 +192,8 @@ nav {
 @media screen and (min-width: 1001px) {
   .container {
     width: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   nav {
     ul {
@@ -201,9 +203,6 @@ nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      li {
-        padding-right: 1%;
-      }
     }
   }
   

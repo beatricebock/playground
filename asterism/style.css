@@ -16,15 +16,16 @@ nav {
   margin: auto;
   padding: auto; }
   nav header {
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 10px; }
   nav ul {
-    padding: 0; }
-    nav ul li {
-      text-align: center;
-      list-style: none;
-      box-sizing: border-box;
-      margin-top: 2%;
-      margin-bottom: 2%; }
+    padding: 0;
+    font-size: 1em li;
+      font-size-text-align: center;
+      font-size-list-style: none;
+      font-size-box-sizing: border-box;
+      font-size-margin-top: 2%;
+      font-size-margin-bottom: 2%; }
 
 .container {
   width: 100%;
@@ -93,8 +94,8 @@ nav {
 .divider {
   width: 100%;
   border-bottom: 0.5px solid black;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+  margin-top: 5%;
+  margin-bottom: 5%; }
 
 @media screen and (max-width: 800px) {
   .posts {
@@ -102,8 +103,8 @@ nav {
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .container {
     width: auto;
-    padding-left: 10%;
-    padding-right: 10%; }
+    padding-left: 8%;
+    padding-right: 8%; }
 
   nav ul {
     margin: auto;
@@ -125,8 +126,8 @@ nav {
 @media screen and (min-width: 1001px) {
   .container {
     width: auto;
-    padding-left: 10%;
-    padding-right: 10%; }
+    padding-left: 8%;
+    padding-right: 8%; }
 
   nav ul {
     margin: auto;
@@ -135,8 +136,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    nav ul li {
-      padding-right: 1%; }
 
   .posts {
     width: 68%; }
