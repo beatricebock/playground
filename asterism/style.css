@@ -68,11 +68,17 @@ nav {
       text-align: center; }
   .container .sidebar .widget {
     border: 1px solid black;
-    padding: 5% 10% 5% 10%; }
+    padding: 5% 10% 5% 10%;
+    margin-bottom: 10%;
+    text-align: center; }
     .container .sidebar .widget .widget-title {
       text-transform: uppercase;
-      letter-spacing: 2px;
-      text-align: center; }
+      letter-spacing: 2px; }
+    .container .sidebar .widget .divider {
+      width: 30%;
+      border-color: dimgray;
+      margin-left: auto;
+      margin-right: auto; }
   .container .sidebar .socials {
     display: flex;
     justify-content: space-around; }

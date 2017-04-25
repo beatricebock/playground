@@ -42,10 +42,14 @@
             %button.btn-post Continue-reading
         .divider
         .pagination
+          %p
+            %a /Past
+            %i.fa.fa-caret-right
 
       .sidebar
         .widget.welcome
           %h3.widget-title Welcome
+          .divider
           %p.widget-content Asterism is a modern and responsive Blogger template for fashion/lifestyle blogs, Here you can add a welcome text.
         .widget.socials
           %a{:href=>'#'}
@@ -59,10 +63,36 @@
           %a{:href=>'#'}
             %i.fa.fa-twitter
         .widget.sub
+          %h3.widget-title Get in the list
+          .divider
+          %p.widget-content Receive exclusive content every two weeks
+          .form-group
+            %input{:placeholder=>'EMAIL ADDRESS'}
+            %input{:placeholder=>'NAME'}
+            %button Send
         .widget.gallery
+          %h3.widget-title @mairagall
+          .gallery
+            %img{:src=>'https://unsplash.it/100/100?random'}
+            %img{:src=>'https://unsplash.it/100/100?random'}
+            %img{:src=>'https://unsplash.it/100/100?random'}
+            %img{:src=>'https://unsplash.it/100/100?random'}
         .widget.categories
+          %h3.widget-title Categories
+          .divider
+          %ul
+            %li Books
+            %li Events
         .widget.search
+          %h3.widget-title Search
+          .divider
+          %input{:src=>'Search something'}
+          %i.fa.fa-search
         .widget.sidebar-featured
+          %h3.widget-title Featured
+          .divider
+          %img{:src=>'https://unsplash.it/200/200?random'}
+          %p.featured-desc
         .widget.archive
 
     %footer

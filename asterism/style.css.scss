@@ -98,12 +98,19 @@ nav {
     .widget {
       border: 1px solid black;
       padding: 5% 10% 5% 10%;
+      margin-bottom: 10%;
+      text-align: center;
       
       .widget-title {
         @include uppercase;
-        text-align: center;
       }
       
+      .divider {
+        width: 30%;
+        border-color: dimgray;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
     }
       .socials {
