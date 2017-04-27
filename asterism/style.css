@@ -185,7 +185,7 @@ nav ul li {
   width: 80%;
   border-bottom: 1px solid gray;
   color: gray;
-  margin: auto;
+  margin: auto auto 10% auto;
 }
 
 .widget.sub button {
