@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vue App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="http://davidtkatz.com/public_css/vue.css">
+
+</head>
+
+<body>
+  <div id="app">Text: {{ text }}</div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        text: 'hello, world'
+      }
+    })
+  </script>
+</body>
+
+
+</html>
