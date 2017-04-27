@@ -27,7 +27,7 @@ nav {
   width: 100%;
   margin: auto;
   padding: auto;
-  
+
   header {
     text-align: center;
     letter-spacing: 10px;
@@ -35,7 +35,7 @@ nav {
 
   ul {
     padding: 0;
-    font-size: 1em
+    font-size: 1em;
     li{
       text-align: center;
       list-style: none;
@@ -55,7 +55,7 @@ nav {
 //.posts {
   //  width: 100%;
   //}
-  
+
   .featured-post {
     position: relative;
     width: 100%;
@@ -69,16 +69,16 @@ nav {
       z-index: -2;
     }
     .featured-content {
-      
+
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       align-content: center;
- 
+
       width: 80%;
       height: 80%;
-      
+
       margin: auto;
       padding: auto;
 
@@ -102,24 +102,24 @@ nav {
       width: 100%;
       text-align: center;
     }
-    
+
     .featured-desc {
       width: 100%;
       text-align: center;
     }
   }
-  
+
   .sidebar {
     .widget {
       border: 1px solid black;
       padding: 5% 10% 5% 10%;
       margin-bottom: 10%;
       text-align: center;
-      
+
       .widget-title {
         @include uppercase;
       }
-      
+
       .divider {
         width: 30%;
         border-color: dimgray;
@@ -131,7 +131,7 @@ nav {
       .socials {
         display: flex;
         justify-content: space-around;
-        
+
         a{
           text-align: center;
           color: black;
@@ -156,7 +156,7 @@ nav {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px){
-  
+
   .container {
     width: auto;
     padding-left: 8%;
@@ -175,15 +175,15 @@ nav {
       }
     }
   }
-  
+
   .posts {
     width: 68%;
-    
+
     .featured-bg {
       max-width: 400px;
     }
   }
-  
+
   .sidebar {
     width: 29%;
   }
@@ -205,10 +205,10 @@ nav {
       justify-content: space-around;
     }
   }
-  
+
   .posts {
     width: 68%;
-    
+
     .featured-bg {
       max-width: 400px;
     }

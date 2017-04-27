@@ -20,12 +20,13 @@ nav {
     letter-spacing: 10px; }
   nav ul {
     padding: 0;
-    font-size: 1em li;
-      font-size-text-align: center;
-      font-size-list-style: none;
-      font-size-box-sizing: border-box;
-      font-size-margin-top: 2%;
-      font-size-margin-bottom: 2%; }
+    font-size: 1em; }
+    nav ul li {
+      text-align: center;
+      list-style: none;
+      box-sizing: border-box;
+      margin-top: 2%;
+      margin-bottom: 2%; }
 
 .container {
   width: 100%;
