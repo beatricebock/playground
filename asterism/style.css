@@ -149,6 +149,9 @@ nav ul li {
   padding-bottom: 3%;
 }
 
+.pagination {
+  text-align: center;
+}
 .widget ul {
   padding: 0;
 }
@@ -198,6 +201,15 @@ nav ul li {
   border: none;
 }
 
+.widget.sidebar-featured {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.widget.sidebar-featured img {
+  width: 100%;
+}
+
 .widget {
   border: 1px solid black;
   padding: 5% 10% 5% 10%;
@@ -210,10 +222,9 @@ button {
   border: none;
   color: white;
   padding: 2% 3% 2% 3%;
-
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .posts {
     width: 100%;
   }
