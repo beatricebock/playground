@@ -108,13 +108,6 @@ nav ul li {
   text-align: center;
 }
 
-.container .sidebar .widget {
-  border: 1px solid black;
-  padding: 5% 10% 5% 10%;
-  margin-bottom: 10%;
-  text-align: center;
-}
-
 .container .sidebar .widget .divider {
   width: 30%;
   border-color: dimgray;
@@ -192,6 +185,24 @@ nav ul li {
   margin-top: 5%;
   height: 5%;
   width: 100%;
+}
+
+.widget.archive {
+  padding: 0;
+}
+
+.widget.archive select {
+  width: 100%;
+  height: 5%;
+  background-color: #DEDEDE;
+  border: none;
+}
+
+.widget {
+  border: 1px solid black;
+  padding: 5% 10% 5% 10%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 button {
