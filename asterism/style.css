@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css");
 
 .text-muted {
   font-size: 0.9em;
@@ -66,6 +67,8 @@ nav ul li {
 
 .container .featured-post img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   margin: auto;
   padding: auto;
   z-index: -2;
@@ -135,6 +138,8 @@ nav ul li {
 
 .posts .post img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .posts .post .divider {
@@ -168,6 +173,7 @@ nav ul li {
 .widget input{
   width: 100%;
   height: 5%;
+  max-height: 40px;
   margin-bottom: 3%;
   background-color: #DEDEDE;
   border: none;
@@ -200,6 +206,7 @@ nav ul li {
 .widget.archive select {
   width: 100%;
   height: 5%;
+  max-height: 40px;
   background-color: #DEDEDE;
   border: none;
 }
@@ -222,9 +229,26 @@ nav ul li {
 
 button {
   background-color: black;
+  max-height: 40px;
   border: none;
   color: white;
   padding: 2% 3% 2% 3%;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover{
+  background-color: gray;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+a {
+  transition: all 0.4s ease-in-out;
+}
+a:hover {
+  cursor: pointer;
+  color: gray;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
