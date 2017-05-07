@@ -11,3 +11,7 @@ body {
   margin: 6%;
 
 }
+
+.link, .link:hover, .link:visited, .link:active {
+  color: #4FC08D;
+}
