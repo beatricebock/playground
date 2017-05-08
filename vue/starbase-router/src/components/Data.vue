@@ -1,8 +1,11 @@
 <template>
   <div class="col-md-12">
-    <Item v-for="(item, index) in items"
-          key="index"
-          :item="item"/>
+    <Item
+      v-for="(item, index) in items"
+      key="index"
+      :passed-item="item"
+      :type="type"
+    />
   </div>
 </template>
 
@@ -13,7 +16,7 @@ import Item from './Item.vue'
     data() {
       return {
         type: this.$route.params.type,
-        items: []
+        items: [],
       }
     },
     watch: {
