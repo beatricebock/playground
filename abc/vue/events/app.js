@@ -7,35 +7,30 @@ new Vue ({
       description: '',
       date: '',
     },
-    events: []
+    events: [
+      {
+        id: 1,
+        name: 'AMG',
+        description: 'Animangaki',
+        date: '2017-05-6'
+      },
+      {
+        id: 2,
+        name: 'GOTG Vol 2',
+        description: 'Guardians of the Galaxy Vol 2',
+        date: '2017-05-7'
+      },
+      {
+        id: 3,
+        name: 'RAND',
+        description: 'Some random event',
+        date: '2017-05-11'
+      },
+    ]
   }, //data stuff
   mounted: function(){
-    this.fetchEvents();
   }, //function that runs once the doc is ready
   methods: {
-    fetchEvents: function () {
-      var events = [
-        {
-          id: 1,
-          name: 'AMG',
-          description: 'Animangaki',
-          date: '2017-05-6'
-        },
-        {
-          id: 2,
-          name: 'GOTG Vol 2',
-          description: 'Guardians of the Galaxy Vol 2',
-          date: '2017-05-7'
-        },
-        {
-          id: 3,
-          name: 'RAND',
-          description: 'Some random event',
-          date: '2017-05-11'
-        },
-      ];
-      this.$set('events', events); //push into array
-    },
 
     addEvent: function (){
       if(this.event.name){
@@ -46,7 +41,7 @@ new Vue ({
 
     deleteEvent: function(event){
       if(confirm("Are you sure you want to delete?")) {
-        this.events.$remove(event);
+        this.events.splice(event, 1);
       }
     },
   } //custom methods we'll use in the app
