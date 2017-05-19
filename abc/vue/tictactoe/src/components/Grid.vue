@@ -53,6 +53,8 @@
         this.gameStatus = this.changeGameStatus()
         if(this.gameStatus === 'turn'){
           this.changePlayer()
+          this.gameStatusMessage = `${this.activePlayer}'s turn`
+
         }
 
       });
