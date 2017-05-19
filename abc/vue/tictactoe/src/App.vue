@@ -1,60 +1,113 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1></h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <div>
+    <div class="scoreBoard">
+      <span>O has {{ wins.O }} wins</span>
+      <h2>Score Board</h2>
+      <span>X has {{ wins.X }} wins</span>
+    </div>
+    <div id="app">
+      <div id="details">
+        <h1>Tic Tac Toe</h1>
+      </div>
+      <grid></grid>
+      <button class="restart" @click="restart">Restart</button>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import Grid from './components/Grid.vue'
+  export default {
+    name: 'app',
+    data() {
+      return {
+        matches: 0,
+        wins: {
+          O: 0,
+          X: 0
+        }
+      }
+    },
+    components: {
+      Grid
+    },
+    methods: {
+      restart () {
+        Event.$emit('clearCell')
+        Event.$emit('gridReset')
+        this.matches++
+      }
+      
+    },
+    created () {
+      Event.$on('win', winner => this.wins[winner]++)
     }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  body {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Dosis', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  #app {
+    margin: 0 auto;
+    max-width: 270px;
+    color: #34495e;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+  }
+  
+  .restart {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Dosis', Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .restart:hover {
+    background-color: #c0392b;
+    cursor: pointer;
+  }
+  
+  .scoreBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15px;
+    background-color: #16a085;
+    box-shadow: 10px solid #fff;
+    padding: 20px;
+    overflow-x: none;
+  }
+  
+  .scoreBoard h2 {
+    margin: 0px;
+  }
+  
+  .scoreBoard span {
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 20px;
+  }
 </style>
