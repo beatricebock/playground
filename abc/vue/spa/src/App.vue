@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view>
+      <router-link v-bind:to="'/'">Home</router-link>
+      <router-link v-bind:to="'/about'">About</router-link>
+    </router-view>
   </div>
 </template>
 
@@ -10,7 +12,9 @@ export default {
   name: 'app'
 }
 </script>
-
+  export default {
+    name: 'app',
+  }
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
