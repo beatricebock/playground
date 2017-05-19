@@ -151,14 +151,14 @@
   }
 
   .statusTurn {
-      background-color: #f1c40f;
+      background-color: #ADE2FF;
   }
 
   .statusWin {
-      background-color: #2ecc71;
+      background-color: #8CD897;
   }
 
   .statusDraw {
-      background-color: #9b59b6;
+      background-color: #8BCBED;
   }
 </style>

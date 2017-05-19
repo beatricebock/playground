@@ -46,10 +46,13 @@
 </script>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
   body {
     background-color: #fff;
     color: #fff;
-    font-family: 'Dosis', Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -59,22 +62,22 @@
   #app {
     margin: 0 auto;
     max-width: 270px;
-    color: #34495e;
+    color: #9EB9FF;
   }
   
   h1 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.85em;
   }
   
   .restart {
-    background-color: #e74c3c;
+    background-color: #FCBAA4;
     color: #fff;
     border: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-family: 'Dosis', Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 1.4em;
     font-weight: bold;
     margin: 0px;
@@ -83,7 +86,7 @@
   }
   
   .restart:hover {
-    background-color: #c0392b;
+    background-color: #FAC9B8;
     cursor: pointer;
   }
   
@@ -93,11 +96,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 15px;
-    background-color: #16a085;
+    height: 70px;
+    background-color: #9EB9FF;
     box-shadow: 10px solid #fff;
     padding: 20px;
-    overflow-x: none;
+    overflow: hidden;
   }
   
   .scoreBoard h2 {
