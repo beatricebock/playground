@@ -3,7 +3,7 @@ Vue.component('task-list', {
   template: `
     <div>
       <form action="" class="form-inline">
-        <div class="form-group"><label for=""></label><input type="text" placeholder="Task" class="form-control" v-model="newTask.task"></div>
+        <div class="form-group"><label for=""></label><input type="text" placeholder="Task" class="form-control" v-model="newTask.task" required></div>
         <button class="btn btn-default" @click="addTask">Add Task</button>
       </form>
       <ul class="list-group">
