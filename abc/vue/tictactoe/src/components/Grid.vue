@@ -51,7 +51,10 @@
         this.cells[cellNumber] = this.activePlayer
         this.moves++
         this.gameStatus = this.changeGameStatus()
-        this.changePlayer()
+        if(this.gameStatus === 'turn'){
+          this.changePlayer()
+        }
+
       });
       Event.$on('gridReset', () => {
         Object.assign(this.$data, this.$options.data())
@@ -105,7 +108,6 @@
     },
     
     watch: {
-        
       gameStatus () {
         if (this.gameStatus === 'win') {
           this.gameStatusColor = 'statusWin'
